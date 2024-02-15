@@ -1,92 +1,32 @@
-# The Solidity Contract-Oriented Programming Language
+# سولیڈیٹی آفیشل ڈاکومینٹیشن اردو میں
 
-[![Matrix Chat](https://img.shields.io/badge/Matrix%20-chat-brightgreen?style=plastic&logo=matrix)](https://matrix.to/#/#ethereum_solidity:gitter.im)
-[![Gitter Chat](https://img.shields.io/badge/Gitter%20-chat-brightgreen?style=plastic&logo=gitter)](https://gitter.im/ethereum/solidity)
-[![Solidity Forum](https://img.shields.io/badge/Solidity_Forum%20-discuss-brightgreen?style=plastic&logo=discourse)](https://forum.soliditylang.org/)
-[![X Follow](https://img.shields.io/twitter/follow/solidity_lang?style=plastic&logo=x)](https://X.com/solidity_lang)
-[![Mastodon Follow](https://img.shields.io/mastodon/follow/000335908?domain=https%3A%2F%2Ffosstodon.org%2F&logo=mastodon&style=plastic)](https://fosstodon.org/@solidity)
+اردو میں سولیڈیٹی کی آ فیشل دستاویزات میں خوش آمدید۔ اس دستاویز کو نئے سرے سے بنایا جاراہا ہے اور اب بھی ترجمہ کیا جا رہا ہے، لہذا یہ اب بھی تبدیلی کے تابع ہے۔
 
-You can talk to us on Gitter and Matrix, tweet at us on X (previously Twitter) or create a new topic in the Solidity forum. Questions, feedback, and suggestions are welcome!
+# ماڈریٹرز اور تعاون کرنے والے
 
-Solidity is a statically typed, contract-oriented, high-level language for implementing smart contracts on the Ethereum platform.
+• [Yousuf Kalim](https://github.com/yousufkalim)
+• [Faisal Hussain](https://github.com/faisalfh5)
+• [Jawad Altaf](https://github.com/jawad0318)
 
-For a good overview and starting point, please check out the official [Solidity Language Portal](https://soliditylang.org).
+# ترجمہ میں حصہ لینے کے لیے
 
-## Table of Contents
+براہ کرم ایک وقت میں ایک صفحے پر کام کریں۔ آپ کو اس ذخیرہ کو کلون کرنا ہوگا، اپنے منتخب کردہ صفحہ کا ترجمہ کرنا ہوگا، اور پل کی درخواست کرنا ہوگی۔
 
-- [Background](#background)
-- [Build and Install](#build-and-install)
-- [Example](#example)
-- [Documentation](#documentation)
-- [Development](#development)
-- [Maintainers](#maintainers)
-- [License](#license)
-- [Security](#security)
+تعاون کرنے سے پہلے، لغت اور طرز گائیڈ کو پڑھیں (اگر وہ موجود ہیں، تو آپ کو متعلقہ لنکس یہیں ملیں گے) یہ سمجھنے کے لیے کہ کچھ سولیڈیٹی اور ایتھرئم سے متعلق مخصوص اصطلاحات کا ترجمہ کیسے کیا جائے۔
 
-## Background
+اس بات کو ذہن میں رکھیں کہ اگر آپ مزید ترجمہ جاری نہیں رکھ سکتے ہیں، تو آپ کو ماڈریٹرز سے رابطہ کرنا چاہیے تاکہ وہ صفحہ کسی اور کو تفویض کر سکیں۔
 
-Solidity is a statically-typed curly-braces programming language designed for developing smart contracts
-that run on the Ethereum Virtual Machine. Smart contracts are programs that are executed inside a peer-to-peer
-network where nobody has special authority over the execution, and thus they allow anyone to implement tokens of value,
-ownership, voting, and other kinds of logic.
+> **نوٹ :\_**  
+> وٹ: کوئی بھی جو اردو میں سولیڈیٹی کی سرکاری دستاویزات میں حصہ ڈالنا چاہتا ہے وہ ایسا کرنے کے لیے آزاد ہے۔
 
-When deploying contracts, you should use the latest released version of
-Solidity. This is because breaking changes, as well as new features and bug fixes, are
-introduced regularly. We currently use a 0.x version
-number [to indicate this fast pace of change](https://semver.org/#spec-item-4).
+# ترجمے کے قواعد
 
-## Build and Install
+اگر آپ سولیڈیٹی کے ترجمہ میں حصہ لینا چاہتے ہیں تو آپ کو درج ذیل اصولوں پر عمل کرنا ہوگا:
 
-Instructions about how to build and install the Solidity compiler can be
-found in the [Solidity documentation](https://docs.soliditylang.org/en/latest/installing-solidity.html#building-from-source).
+1. کسی فائل کا نام اور مقام کبھی تبدیل نہ کریں۔
+2. مخصوص سولیڈیٹی یا ایتھرئم الفاظ کے ناموں کے لیے، اگر ممکن ہو تو، لفظ کو اردو میں لکھے، یا اسے بغیر تبدیلی کیے چھوڑ دیں۔
+3. دستاویز کے مطابق متعلقہ فونٹ کی اقسام استعمال کریں۔
 
+# ترجمہ میں گرائمیکل اور سیمنٹک غلطیوں کی اطلاع دینا
+اگر آپ نے فعال ترجمہ میں ایسی غلطیاں دیکھی ہیں، تو براہ کرم گرامر اور سیمنٹک ایرر ٹیگ کے ساتھ ایک مسئلہ کھول کر ترجمہ کے معیار کو بہتر بنانے میں ہماری مدد کریں۔ 
 
-## Example
-
-A "Hello World" program in Solidity is of even less use than in other languages, but still:
-
-```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity >=0.6.0 <0.9.0;
-
-contract HelloWorld {
-    function helloWorld() external pure returns (string memory) {
-        return "Hello, World!";
-    }
-}
-```
-
-To get started with Solidity, you can use [Remix](https://remix.ethereum.org/), which is a
-browser-based IDE. Here are some example contracts:
-
-1. [Voting](https://docs.soliditylang.org/en/latest/solidity-by-example.html#voting)
-2. [Blind Auction](https://docs.soliditylang.org/en/latest/solidity-by-example.html#blind-auction)
-3. [Safe remote purchase](https://docs.soliditylang.org/en/latest/solidity-by-example.html#safe-remote-purchase)
-4. [Micropayment Channel](https://docs.soliditylang.org/en/latest/solidity-by-example.html#micropayment-channel)
-
-## Documentation
-
-The Solidity documentation is hosted using [Read the Docs](https://docs.soliditylang.org).
-
-## Development
-
-Solidity is still under development. Contributions are always welcome!
-Please follow the
-[Developers Guide](https://docs.soliditylang.org/en/latest/contributing.html)
-if you want to help.
-
-You can find our current feature and bug priorities for forthcoming
-releases in the [projects section](https://github.com/ethereum/solidity/projects).
-
-## Maintainers
-The Solidity programming language and compiler are open-source community projects governed by a core team.
-The core team is sponsored by the [Ethereum Foundation](https://ethereum.foundation/).
-
-## License
-Solidity is licensed under [GNU General Public License v3.0](LICENSE.txt).
-
-Some third-party code has its [own licensing terms](cmake/templates/license.h.in).
-
-## Security
-
-The security policy may be [found here](SECURITY.md).
